@@ -17,5 +17,7 @@ document.querySelector("ul").addEventListener("click", (e)=>{
     if(target.tagName == "LI"){
         target = target.querySelector("span");
     }
-    alert(target.innerText);
+    if(target.tagName == "span"){
+        alert(target.innerText);
+    }
 });
